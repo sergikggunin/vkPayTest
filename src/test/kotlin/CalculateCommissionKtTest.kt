@@ -33,4 +33,15 @@ class CalculateCommissionTest {
         )
         assertEquals(0.0, commission, 0.01)
     }
+
+
+    @Test
+    fun testCalculateCommissionVisaCardType() {
+        val commission = calculateCommission(
+            cardType = "Visa",
+            currentTransfer = 1_000_00
+        )
+        assertEquals(0.0, commission, 0.01)
+    }
 }
+
